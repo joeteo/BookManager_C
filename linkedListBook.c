@@ -493,7 +493,7 @@ void insertionSort(LIST* ptrlist, _comp criteria) {		// 삽입정렬
 			}
 			NODE* temp = ptrlist->curr;	// curr의 위치 저장용
 			putNPushNode(compNode, ptrlist->curr);	// curr 노드 알맞은 위치에 끼워 넣기
-			ptrlist->curr = temp->next;	// 스왑직전 저장해둔 curr의 다음칸으로 옮김
+			ptrlist->curr = temp->next;	// 끼워 넣기 직전 저장해둔 curr의 다음칸으로 옮김
 		}
 		compNode = ptrlist->curr->prev;	// compNode는 curr보다 한칸 앞
 	}
